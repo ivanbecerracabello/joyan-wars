@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://b1br68dlkkeja"]
+
+[ext_resource type="Script" path="res://scripts/gate.gd" id="1_fl652"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fp0e3"]
+size = Vector3(7.9, 2.5, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5is32"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_clrei"]
+material = SubResource("StandardMaterial3D_5is32")
+size = Vector3(7.9, 1, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hg3si"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rjn3n"]
+material = SubResource("StandardMaterial3D_hg3si")
+size = Vector3(7.9, 0.1, 0.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ewjf"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3o6r3"]
+material = SubResource("StandardMaterial3D_5ewjf")
+size = Vector3(0.1, 1.4, 0.1)
+
+[node name="Gate" type="StaticBody3D"]
+script = ExtResource("1_fl652")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.95, 1.25, 0)
+shape = SubResource("BoxShape3D_fp0e3")
+
+[node name="LowerPart" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.95, 0.5, 0)
+mesh = SubResource("BoxMesh_clrei")
+
+[node name="UpperPart" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.95, 2.45, 0)
+mesh = SubResource("BoxMesh_rjn3n")
+
+[node name="Bar1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
+
+[node name="Bar9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.85, 1.7, 0)
+mesh = SubResource("BoxMesh_3o6r3")
