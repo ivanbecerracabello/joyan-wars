@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://1yqvmeaoy785"]
 
-[ext_resource type="Script" path="res://scripts/soldier.gd" id="1_o3mlh"]
+[ext_resource type="Script" uid="uid://01d5ytd5ngyu" path="res://scripts/soldier.gd" id="1_o3mlh"]
 [ext_resource type="PackedScene" uid="uid://4k2jy2m2tyr" path="res://scenes/weapon.tscn" id="2_cgcoh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qjfc6"]

@@ -35,8 +35,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ibffe"]
 _data = {
-"RESET": SubResource("Animation_rfok0"),
-"Shoot": SubResource("Animation_npn25")
+&"RESET": SubResource("Animation_rfok0"),
+&"Shoot": SubResource("Animation_npn25")
 }
 
 [node name="Weapon" type="Node3D"]
@@ -46,7 +46,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_ibffe")
+&"": SubResource("AnimationLibrary_ibffe")
 }
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
